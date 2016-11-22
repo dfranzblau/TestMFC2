@@ -184,8 +184,8 @@ void CGameBoard::MarkFlips(int count)
 
 void CGameBoard::ClearFlips(void)
 {
-	for (int row = 0; row < 8; row++)
-		for (int col = 0; col < 8; col++)
+	for (int row = 0; row < boardsize; row++)
+		for (int col = 0; col < boardsize; col++)
 			flips[row][col] = false;
 }
 
